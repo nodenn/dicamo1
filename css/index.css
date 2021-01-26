@@ -20,9 +20,18 @@
   overflow: hidden;
   height: 600px;
   width: 100%;
+  position: relative;
+}
+.tab:first-child>a {
+  background: url(/img/human.jpg) no-repeat center/cover;
+}
+.tab:last-child>a {
+  background: url(/img/tech.jpg) no-repeat center/cover;
 }
 .tab a img {
-  width: 100%;
+  /* max-width: 100%; */
+  height: 600px;
+  position: absolute;
 }
 .btn {
   position: absolute;
@@ -70,7 +79,7 @@
 .service {
   padding: 0;
   padding-bottom: 80px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .service_title {
@@ -87,25 +96,35 @@
 }
 .service ul {
   margin: 60px auto;
-  width: 1200px;
+  width: 100%;
   overflow: hidden;
 }
 .service ul li {
   position: relative;
   float: left;
   width: 49%;
+  height: auto;
 }
 .service ul li:last-child {
   float: right;
 }
 .section ul li .item {
   display: block;
+  position: relative;
   width: 100%;
   height: 100%;
 }
-.section ul li .item .img img {
+.section ul li:first-child .item .itemBg .bg {
+  background: url(/img/sensor.jpg) no-repeat center/cover;
+}
+.section ul li:last-child .item .itemBg .bg {
+  background: url(/img/selfservice.jpg) no-repeat center/cover;
+}
+.bg {
+  position: relative;
   width: 100%;
-  height: 100%;
+  display: block;
+  height: 400px;
 }
 .section ul li .desc {
   position: absolute;
@@ -113,6 +132,7 @@
   left: 0;
   padding: 2.4em 2.2em;
   width: 100%;
+  z-index: 2;
 }
 .desc a h2 {
   color: #fff;
@@ -162,7 +182,7 @@
 
 /* make */
 .make {
-  padding: 100px 0 120px 0;
+  padding: 100px 0 120px 80px;
   width: 1200px;
   margin: 0 auto;
   background: url(../img/touchMonitor.png) no-repeat center/cover;
@@ -239,6 +259,9 @@
   width: 22.75%;
   background: #fff;
   margin-left: 3%;
+}
+.news_list li:hover {
+  box-shadow: rgba(0, 0, 0, 0.5);
 }
 .news_list li:first-child {
   margin: 0;

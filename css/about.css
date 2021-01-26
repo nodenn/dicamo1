@@ -60,7 +60,6 @@
   position: relative;
   display: table-cell;
   text-align: center;
-  display: inline-block;
   width: 150px;
   height: 70px;
 }
@@ -81,7 +80,7 @@
 
 #article {
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 120px 0;
   overflow: hidden;
@@ -130,7 +129,6 @@
 }
 .organization, .global{
   position: relative;
-  width: 1200px;
 }
 .organization>img, .global>img {
   display: block;

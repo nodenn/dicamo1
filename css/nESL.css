@@ -59,8 +59,7 @@
   position: relative;
   display: table-cell;
   text-align: center;
-  display: inline-block;
-  width: 50%;
+  width: 160px;
   height: 70px;
 }
 .page_cate ul li a {
@@ -80,7 +79,7 @@
 
 #article {
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 120px 0;
   overflow: hidden;
@@ -142,6 +141,7 @@
 }
 .intro_list li dd p {
   line-height: 28px;
+  word-break: keep-all;
 }
 .item1 {
   background: url(../img/data.jpg) no-repeat center/cover;
