@@ -2,7 +2,7 @@
 
 
 /*main*/
-.main {
+#main {
   display: block;
   position: relative;
   box-sizing: border-box;
@@ -15,25 +15,53 @@
   margin-top: 70px;
   position: relative;
 }
-.tab a {
+.tab_desc {
+  position: absolute;
+  z-index: 11;
+  color: #fff;
+  left: 15%;
+  bottom: 20%;
+  text-shadow: 0 0 7px rgb(0, 0, 0);
+  cursor: default;
+}
+.tab_desc h1 {
+  font-size: 72px;
+}
+.tab_desc p {
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  word-break: keep-all;
+}
+.tab .tab_img {
   display: block;
   overflow: hidden;
   height: 600px;
   width: 100%;
   position: relative;
 }
-.tab:first-child>a {
-  background: url(/img/human.jpg) no-repeat center/cover;
+.tab:first-child>.tab_img {
+  background: url(/img/dicamoMain02.png) no-repeat center/cover;
 }
-.tab:last-child>a {
-  background: url(/img/tech.jpg) no-repeat center/cover;
+.tab:last-child>.tab_img {
+  background: url(/img/dicamoMain03.png) no-repeat center/cover;
 }
-.tab a img {
+.tab div img {
   /* max-width: 100%; */
   height: 600px;
   position: absolute;
 }
-.btn {
+.tab:last-child .tab_desc {
+  left: 50%;
+  bottom: auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.tab:last-child .tab_desc p {
+  font-size: 20px;
+}
+/* .btn {
   position: absolute;
   text-align: center;
   width: 100%;
@@ -53,7 +81,7 @@
 .active {
   background-color: #769BC0;
   border-radius: 50%;
-}
+} */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.4s;
@@ -182,14 +210,18 @@
 
 /* make */
 .make {
-  padding: 100px 0 120px 80px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-  background: url(../img/touchMonitor.png) no-repeat center/cover;
+  background: url(../img/3542817.png) no-repeat center/cover;
+}
+.make_box {
+  padding: 80px 80px 120px 80px;
+  background: rgba(255, 255, 255, 0.45);
 }
 .make_title {
   position: relative;
-  width: 100%;
+  max-width: 100%;
+  word-break: keep-all;
 }
 .make_title h2 {
   font-size: 50px;
@@ -205,14 +237,16 @@
 }
 .make_list ul li{
   position: relative;
-  margin-top: 40px;
+  margin: 30px 0;
   height: 60px;
+  display: block;
 }
-.make_list ul li .make_img {
-  float: left;
+.make_img {
+  /* float: left; */
   padding: 5px 0;
+  display: inline-block;
 }
-.make_list ul li .make_img img {
+.make_img img {
   height: 50px;
 }
 .make_list ul li p {
@@ -235,8 +269,9 @@
   background: #444;
 }
 .news_inner {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .news_title {
   position: relative;
@@ -264,7 +299,7 @@
   box-shadow: rgba(0, 0, 0, 0.5);
 }
 .news_list li:first-child {
-  margin: 0;
+  margin-left: 0;
 }
 .news_list li a {
   display: block;

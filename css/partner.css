@@ -94,3 +94,12 @@
 .partners img {
   width: 100%;
 }
+
+@media screen and (max-width: 1024px){
+  .page_cate ul {
+    width: 100%;
+  }
+  .page_cate ul li {
+    width: 33.33%;
+  }
+}
