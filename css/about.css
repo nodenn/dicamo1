@@ -98,7 +98,7 @@
 #article>p span::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 98%;
   left: 0;
   border: 1px solid #000;
 }
