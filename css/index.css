@@ -41,10 +41,10 @@
   position: relative;
 }
 .tab:first-child>.tab_img {
-  background: url(./img/dicamoMain02.png) no-repeat center/cover;
+  background: url(../img/dicamoMain02.png) no-repeat center/cover;
 }
 .tab:last-child>.tab_img {
-  background: url(/img/dicamoMain03.png) no-repeat center/cover;
+  background: url(../img/dicamoMain03.png) no-repeat center/cover;
 }
 .tab div img {
   /* max-width: 100%; */
@@ -143,10 +143,10 @@
   height: 100%;
 }
 .section ul li:first-child .item .itemBg .bg {
-  background: url(/img/sensor.jpg) no-repeat center/cover;
+  background: url(../img/sensor.jpg) no-repeat center/cover;
 }
 .section ul li:last-child .item .itemBg .bg {
-  background: url(/img/selfservice.jpg) no-repeat center/cover;
+  background: url(../img/selfservice.jpg) no-repeat center/cover;
 }
 .bg {
   position: relative;
