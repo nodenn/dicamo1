@@ -41,7 +41,7 @@
   position: relative;
 }
 .tab:first-child>.tab_img {
-  background: url(/img/dicamoMain02.png) no-repeat center/cover;
+  background: url(./img/dicamoMain02.png) no-repeat center/cover;
 }
 .tab:last-child>.tab_img {
   background: url(/img/dicamoMain03.png) no-repeat center/cover;
